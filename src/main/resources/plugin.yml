@@ -1,0 +1,19 @@
+name: MaptestUtils
+main: team.sutekina.maptestutils.MaptestUtils
+version: 0.0.1-SNAPSHOT
+author: Team Sutekina
+depend:
+- Multiverse-Core
+loadbefore:
+- Multiverse-Core
+commands:
+   starttest:
+      description: Create test environment
+      usage: /starttest <user> <worldname>
+      permission: team.sutekina.maptestutils.starttest
+      permission-message: You dont have team.sutekina.maptestutils.starttest
+   endtest:
+      description: End test environment
+      usage: /endtest <user>
+      permission: team.sutekina.maptestutils.endtest
+      permission-message: You dont have team.sutekina.maptestutils.endtest
